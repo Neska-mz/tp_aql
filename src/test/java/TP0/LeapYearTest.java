@@ -1,4 +1,6 @@
-import org.example.LeapYear;
+package TP0;
+
+import org.example.TP0.LeapYear;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
