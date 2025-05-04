@@ -9,7 +9,10 @@ public class UserService {
     }
 
     public void creerUtilisateur(Utilisateur utilisateur) throws ServiceException {
-        utilisateurApi.creerUtilisateur(utilisateur);
+        boolean success = utilisateurApi.creerUtilisateur(utilisateur);
+        if (!success) {
+            throw new ServiceException("Failed to create user");
+        }
     }
 }
 

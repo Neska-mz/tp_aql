@@ -4,6 +4,7 @@ public class Utilisateur {
     private String prenom;
     private String nom;
     private String email;
+    private int id;
 
     public Utilisateur(String prenom, String nom, String email) {
         this.prenom = prenom;
@@ -21,5 +22,13 @@ public class Utilisateur {
 
     public String getEmail() {
         return email;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 }
